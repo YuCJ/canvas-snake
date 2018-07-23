@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas Snake</title>
+  <meta property="og:title" content="Canvas Snake" />
+  <meta property="og:description" content="Project 5 of the online course [動畫互動網頁特效入門（JS/CANVAS）]" />
+  <meta property="og:image" content="static/snake.jpg"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.2.0/Tone.min.js" integrity="sha256-x8ibE5oIcf5JWPLWE8LqQLIxHLRGsyu5yZgKvbde5Jo="
+    crossorigin="anonymous"></script>
+  <style>
+    #canvas {
+      max-width: 100%;
+    }
+
+    html,
+    body,
+    .container {
+      height: 100%;
+      margin: 0;
+      background-color: black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #panel {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    #start-game {
+      background-color: transparent;
+      border-radius: 20px;
+      border: 2px solid white;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    #start-game:hover {
+      background: white;
+      color: black;
+    }
+
+    .hide {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <canvas id="canvas"></canvas>
+    <div id="panel">
+      <h2 id="score">Score: 0</h2>
+      <button id="start-game">Start Game</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="dist/main.js"></script>
+</body>
+
+</html>
